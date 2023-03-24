@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire de salutation</title>
+	<link href="/cgi/css/index.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Formulaire de salutation</h1>
+	<form method="post" action="salut.py">
+		<label for="nom">Nom :</label>
+		<input type="text" id="nom" name="nom" pattern="[A-Z][a-z]*" placeholder="Entrez votre nom" required>
+		
+		<label for="civilite">Civilité :</label>
+		<select id="civilite" name="civilite">
+			<option value="Mme">Madame</option>
+			<option value="M.">Monsieur</option>
+		</select>
+		
+        <div class="input"><input type="submit" value="Saluer"></div>
+	</form>
+</body>
+</html>
